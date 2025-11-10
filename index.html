@@ -2,18 +2,36 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Slide 1</title>
+  <title>ALIEN</title>
   <style>
-    body { text-align: center; background-color: #f4f4f4; margin: 0; padding: 20px; }
-    img { max-width: 80%; height: auto; margin-top: 50px; }
-    a { display: inline-block; margin: 20px; text-decoration: none; font-size: 20px; color: #333; border: 1px solid #333; padding: 10px 20px; border-radius: 5px; }
-  </style>
-</head>
-<body>
-  <!-- Show slide 1 image -->
-  <img src="1.png" alt="Slide 1">
-  <div>
-    <a href="2.html">Next →</a>
-  </div>
-</body>
-</html>
+    body {
+      background-color: #0a0a0a;
+      color: #fff;
+      font-family: 'Arial Black', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 50px 20px;
+    }
+    h1 {
+      font-size: 80px;
+      color: #39ff14;
+      text-shadow:
+        0 0 5px #39ff14,
+        0 0 10px #39ff14,
+        0 0 20px #39ff14,
+        0 0 40px #39ff14,
+        0 0 80px #39ff14;
+      animation: flicker 2s infinite;
+    }
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% { opacity: 1; }
+      20%, 24%, 55% { opacity: 0.5; }
+    }
+    a {
+      display: inline-block;
+      margin: 20px;
+      text-decoration: none;
+      font-size: 24px;
+      color: #0ff;
+      border: 2px solid #0ff;
+      padding: 10px 30
